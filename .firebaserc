@@ -1,0 +1,13 @@
+{
+  "projects": {
+    "default": "portfolio-mali-erdogan"
+  },
+  "targets": {},
+  "etags": {
+    "portfolio-mali-erdogan": {
+      "extensionInstances": {
+        "firestore-send-email": "06e21258eb67bb0c1acd710575bfa00e85f318a18e350494f05540f9255b1091"
+      }
+    }
+  }
+}
