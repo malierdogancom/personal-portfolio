@@ -1,15 +1,17 @@
 import HeroSection from "@/components/HeroSection";
-import EducationSection from "@/components/EducationSection";
+import TimelineSection from "@/components/TimelineSection";
 import ResearchSection from "@/components/ResearchSection";
 import ProjectsSection from "@/components/ProjectsSection";
+import AwardsSection from "@/components/AwardsSection";
 import ContactSection from "@/components/ContactSection";
 
 export default function Home() {
   return (
     <div className="flex flex-col">
       <HeroSection />
-      <EducationSection />
       <ResearchSection />
+      <TimelineSection />
+      <AwardsSection />
       <ProjectsSection />
       <ContactSection />
     </div>

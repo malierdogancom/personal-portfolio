@@ -2,6 +2,7 @@ export const translations = {
     en: {
         navbar: {
             about: "About",
+            experience: "Experience",
             education: "Education",
             research: "Research",
             projects: "Projects",
@@ -11,31 +12,77 @@ export const translations = {
             greeting: "Hi, I'm",
             title: "MSc Student in Computer Engineering at",
             university: "Istanbul Technical University (İTÜ)",
-            bio: "Specializing in Bioinformatics algorithms, Metabolomic Data Analysis, and Fullstack Development. Currently working as a researcher at TÜBİTAK on Alzheimer's and Dementia diagnosis using computational approaches.",
+            bio: "M.Sc. student in Computer Engineering specializing in Bioinformatics. Focused on leveraging previous experience in fullstack development and database management to create innovative solutions in metabolomic data analysis and computational biology.",
             cta_contact: "Get in Touch",
             cta_projects: "View Projects",
+            cta_cv: "Download CV",
+        },
+        experience: {
+            title: "Technical Experience",
+            items: [
+                {
+                    role: "Graduate Researcher & Teaching Assistant (Turkcell Scholar)",
+                    company: "Istanbul Technical University (İTÜ)",
+                    date: "Feb 2026 - Present",
+                    description: [
+                        "Conducting academic research on bioinformatics and metabolic network analysis under the supervision of Assoc. Prof. Ali Çakmak.",
+                        "Assisting undergraduate Computer Engineering courses and laboratory sessions, and supporting grading processes."
+                    ]
+                },
+                {
+                    role: "Graduate Student Researcher",
+                    company: "TÜBİTAK",
+                    date: "Sep 2025 - Feb 2026",
+                    description: [
+                        "Actively participated in the project 'Micro(RNA)-Based and Computational Approaches in the Diagnosis, Prognosis, and Treatment of Alzheimer's and Dementia'.",
+                        "Conducted data analysis and modeling using bioinformatics algorithms."
+                    ]
+                },
+                {
+                    role: "Intern",
+                    company: "COMSIS Bilgisayar Ltd. Şti.",
+                    date: "Jul 2025 - Aug 2025",
+                    description: [
+                        "Supported the maintenance and development of PHP-based e-commerce platforms.",
+                        "Implemented user interface (UI) improvements in line with web design principles."
+                    ]
+                },
+                {
+                    role: "Intern",
+                    company: "Haroon Technology",
+                    date: "Mar 2025 - May 2025",
+                    description: [
+                        "Contributed to the development of a PHP-based Customer Relationship Management (CRM) system.",
+                        "Wrote database queries using SQL and participated in database management processes."
+                    ]
+                }
+            ]
         },
         education: {
             title: "Education",
             items: [
                 {
-                    year: "2025 - Present",
+                    year: "Sep 2025 - Present",
                     degree: "M.Sc. in Computer Engineering",
                     university: "Istanbul Technical University (İTÜ)",
-                    description: "Specializing in Bioinformatics and Computational Biology."
+                    description: "Specializing in Bioinformatics and Computational Biology. GPA: 4.00"
                 },
                 {
-                    year: "2021 - 2025",
+                    year: "Sep 2021 - Aug 2025",
                     degree: "B.Sc. in Computer Engineering",
                     university: "Namık Kemal University",
-                    description: ""
+                    description: "GPA: 3.26"
                 },
                 {
-                    year: "2021 - 2024",
+                    year: "Sep 2021 - Jun 2024",
                     degree: "B.Sc. in Management Information Systems",
                     university: "Anadolu University (Distance Education)",
-                    description: ""
+                    description: "GPA: 3.25"
                 }
+            ],
+            honors: [
+                "ALES Score: 91.54 / 100 (2021)",
+                "YÖKDİL Score: 91.25 / 100 (2023)"
             ]
         },
         research: {
@@ -47,17 +94,17 @@ export const translations = {
                 },
                 {
                     title: "Metabolomic Data Analysis",
-                    description: "Applying machine learning (Scikit-learn) and data processing techniques (Pandas, NumPy) to analyze complex biological datasets."
+                    description: "Applying machine learning (Scikit-learn, COBRApy) and data processing techniques (Pandas, NumPy) to analyze complex biological datasets."
                 },
                 {
-                    title: "Fullstack & Mobile Development",
-                    description: "Building scalable web and mobile applications using React, Next.js, Flutter, and Cloud technologies (AWS, Docker)."
+                    title: "Computational Data Science",
+                    description: "Leveraging strong database and programming fundamentals (Python, SQL) for scalable and efficient biological data processing."
                 }
             ]
         },
         projects: {
-            title: "Projects & Achievements",
-            awards_title: "Awards",
+            title: "Projects",
+            awards_title: "Awards & Events",
             items: [
                 {
                     title: "Customized AI Chatbot (UN.GPT & kuran.stackia)",
@@ -65,22 +112,17 @@ export const translations = {
                     description: "Designed and developed an end-to-end AI chatbot and web interface working with a specific knowledge base."
                 },
                 {
-                    title: "Finance Tracker Web App",
-                    tech: "Laravel, React, Docker, MySQL",
-                    description: "Developed a scalable web platform for budget management and expense analysis using Docker container architecture."
-                },
-                {
                     title: "Terat - Match Organization Platform",
                     tech: "Flutter, Dart, Firebase",
                     description: "Built a comprehensive mobile application for organizing matches with real-time database integration."
-                },
-                {
-                    title: "Instagram Data Scraper",
-                    tech: "JavaScript",
-                    description: "Developed a script to automatically collect and process large-scale follower/following data via Instagram APIs."
                 }
             ],
             awards: [
+                {
+                    title: "TUSEB İzmir Genom Workshop",
+                    event: "Dokuz Eylül University",
+                    year: "2025"
+                },
                 {
                     title: "Best Presentation Award",
                     event: "HIBIT / RSG - 18th International Symposium on Health Informatics and Bioinformatics",
@@ -107,6 +149,7 @@ export const translations = {
     tr: {
         navbar: {
             about: "Hakkımda",
+            experience: "Deneyim",
             education: "Eğitim",
             research: "Araştırma",
             projects: "Projeler",
@@ -116,31 +159,77 @@ export const translations = {
             greeting: "Merhaba, Ben",
             title: "Bilgisayar Mühendisliği Yüksek Lisans Öğrencisi,",
             university: "İstanbul Teknik Üniversitesi (İTÜ)",
-            bio: "Biyoinformatik algoritmaları, Metabolomik Veri Analizi ve Fullstack Geliştirme alanlarında uzmanlaşıyorum. Şu anda TÜBİTAK bünyesinde, Alzheimer ve Demans tanısı için hesaplamalı yaklaşımlar üzerine araştırmacı olarak çalışmaktayım.",
+            bio: "Biyoinformatik alanında uzmanlaşan, Bilgisayar Mühendisliği Yüksek Lisans öğrencisi. Fullstack geliştirme ve veritabanı yönetimi konularındaki tecrübesini, metabolomik veri analizi ve hesaplamalı biyoloji alanlarında yenilikçi çözümler üretmek için kullanmaya odaklanmıştır.",
             cta_contact: "İletişime Geç",
             cta_projects: "Projeleri İncele",
+            cta_cv: "CV İndir",
+        },
+        experience: {
+            title: "Teknik Deneyim",
+            items: [
+                {
+                    role: "Araştırmacı ve Öğretim Asistanı (Turkcell Bursiyeri)",
+                    company: "İstanbul Teknik Üniversitesi (İTÜ)",
+                    date: "Şubat 2026 - Devam Ediyor",
+                    description: [
+                        "Doç. Dr. Ali Çakmak danışmanlığında biyoinformatik ve metabolik ağ analizi üzerine akademik araştırmalar yürütülmektedir.",
+                        "Bilgisayar Mühendisliği lisans dersleri ve laboratuvar uygulamalarında öğretim asistanlığı yapılmakta, ödev ve proje değerlendirme süreçlerine destek verilmektedir."
+                    ]
+                },
+                {
+                    role: "Yüksek Lisans Proje Araştırmacısı",
+                    company: "TÜBİTAK",
+                    date: "Eylül 2025 - Şubat 2026",
+                    description: [
+                        "\"Alzheimer ve Demans Tanısı, Prognozu ve Tedavisinde (Mikro)RNA-Tabanlı ve Hesaplamalı Yaklaşımlar\" projesinde aktif olarak görev alındı.",
+                        "Proje kapsamında, biyoinformatik algoritmaları kullanılarak veri analizi ve modelleme çalışmaları yürütüldü."
+                    ]
+                },
+                {
+                    role: "Stajyer",
+                    company: "COMSIS Bilgisayar Ltd. Şti.",
+                    date: "Temmuz 2025 - Ağustos 2025",
+                    description: [
+                        "PHP kullanılarak geliştirilen e-ticaret platformlarının bakım ve geliştirme süreçlerine destek verildi.",
+                        "Web tasarımı prensipleri doğrultusunda kullanıcı arayüzü (UI) iyileştirmeleri yapıldı."
+                    ]
+                },
+                {
+                    role: "Stajyer",
+                    company: "Haroon Technology",
+                    date: "Mart 2025 - Mayıs 2025",
+                    description: [
+                        "PHP tabanlı Müşteri İlişkileri Yönetimi (CRM) sisteminin geliştirilmesine katkı sağlandı.",
+                        "SQL kullanılarak veritabanı sorguları yazıldı ve veritabanı yönetimi süreçlerinde görev alındı."
+                    ]
+                }
+            ]
         },
         education: {
             title: "Eğitim",
             items: [
                 {
-                    year: "2025 - Devam Ediyor",
-                    degree: "Bilgisayar Mühendisliği Yüksek Lisans",
-                    university: "İstanbul Teknik Üniversitesi (İTÜ)",
-                    description: "Biyoinformatik ve Hesaplamalı Biyoloji üzerine uzmanlaşma."
+                    year: "Eylül 2025 - Devam Ediyor",
+                    degree: "Bilgisayar Mühendisliği Yüksek Lisans Programı",
+                    university: "İstanbul Teknik Üniversitesi",
+                    description: "Biyoinformatik ve Hesaplamalı Biyoloji üzerine uzmanlaşma. GPA: 4.00"
                 },
                 {
-                    year: "2021 - 2025",
-                    degree: "Bilgisayar Mühendisliği Lisans",
+                    year: "Eylül 2021 - Ağustos 2025",
+                    degree: "Bilgisayar Mühendisliği Lisans Programı",
                     university: "Namık Kemal Üniversitesi",
-                    description: ""
+                    description: "GPA: 3.26"
                 },
                 {
-                    year: "2021 - 2024",
-                    degree: "Yönetim Bilişim Sistemleri Lisans",
+                    year: "Eylül 2021 - Haziran 2024",
+                    degree: "Yönetim Bilişim Sistemleri Lisans Programı",
                     university: "Anadolu Üniversitesi (Uzaktan Eğitim)",
-                    description: ""
+                    description: "GPA: 3.25"
                 }
+            ],
+            honors: [
+                "2021 yılında ALES sınavında 91.54 / 100 puan alındı.",
+                "2023 yılında YÖKDİL sınavında 91.25 / 100 puan alındı."
             ]
         },
         research: {
@@ -152,40 +241,35 @@ export const translations = {
                 },
                 {
                     title: "Metabolomik Veri Analizi",
-                    description: "Karmaşık biyolojik veri setlerini analiz etmek amacıyla Makine Öğrenimi (Scikit-learn) ve veri işleme (Pandas, NumPy) tekniklerini uyguluyorum."
+                    description: "Karmaşık biyolojik veri setlerini analiz etmek amacıyla Makine Öğrenimi (Scikit-learn, COBRApy) ve veri işleme (Pandas, NumPy) tekniklerini uyguluyorum."
                 },
                 {
-                    title: "Fullstack & Mobil Geliştirme",
-                    description: "React, Next.js, Flutter ve Bulut teknolojileri (AWS, Docker) kullanarak ölçeklenebilir web ve mobil uygulamalar geliştiriyorum."
+                    title: "Hesaplamalı Bilimler & Veri Analizi",
+                    description: "Biyolojik verilerin analizinde güçlü veritabanı ve programlama (Python, SQL) temellerinden faydalanarak yenilikçi çözümler üretiyorum."
                 }
             ]
         },
         projects: {
-            title: "Projeler & Başarılar",
-            awards_title: "Ödüller",
+            title: "Projeler",
+            awards_title: "Etkinlikler ve Ödüller",
             items: [
                 {
                     title: "Özelleştirilmiş AI Chatbot (UN.GPT & kuran.stackia)",
                     tech: "React, Next.js, AWS, MySQL, OpenAI API",
-                    description: "Belirli bir bilgi tabanı ile çalışan, uçtan uca yapay zeka destekli bir sohbet botu ve web arayüzü tasarladım ve geliştirdim."
-                },
-                {
-                    title: "Finans Takip Web Uygulaması",
-                    tech: "Laravel, React, Docker, MySQL",
-                    description: "Docker konteyner mimarisi üzerinde, bütçe yönetimi ve harcama analizi sağlayan ölçeklenebilir bir web platformu geliştirdim."
+                    description: "Belirli bir bilgi tabanı ile çalışan, uçtan uca yapay zeka destekli bir sohbet botu ve web arayüzü tasarlandı ve geliştirildi."
                 },
                 {
                     title: "Terat - Maç Organizasyon Platformu",
                     tech: "Flutter, Dart, Firebase",
-                    description: "Gerçek zamanlı veritabanı entegrasyonuna sahip, maç organizasyonları için kapsamlı bir mobil uygulama geliştirdim."
-                },
-                {
-                    title: "Instagram Veri Kazıyıcı",
-                    tech: "JavaScript",
-                    description: "Instagram API'leri aracılığıyla büyük ölçekli takipçi verilerini otomatik olarak toplamak ve işlemek için bir script geliştirdim."
+                    description: "Kullanıcıların takım kurup maç organize etmelerini sağlayan, gerçek zamanlı veritabanı kullanan kapsamlı bir mobil uygulama geliştirildi."
                 }
             ],
             awards: [
+                {
+                    title: "TUSEB İzmir Genom Çalıştayı",
+                    event: "Dokuz Eylül Üniversitesi",
+                    year: "2025"
+                },
                 {
                     title: "En İyi Sunum Ödülü",
                     event: "HIBIT / RSG - 18. Uluslararası Sağlık Bilişimi ve Biyoinformatik Sempozyumu",

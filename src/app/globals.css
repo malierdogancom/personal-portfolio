@@ -27,28 +27,28 @@ html {
 }
 
 :root {
-  /* Violet & Zinc Theme */
-  --background: #09090b;
-  /* Zinc 950 - Neutral Dark */
-  --foreground: #fafafa;
-  /* Zinc 50 */
+  /* Slate/Teal Theme - Professional Academic */
+  --background: #0f172a;
+  /* Slate 900 */
+  --foreground: #f8fafc;
+  /* Slate 50 */
 
-  --primary: #7359E5;
-  /* Lighter Violet */
-  --primary-foreground: #09090b;
+  --primary: #38bdf8;
+  /* Light Blue/Teal */
+  --primary-foreground: #0f172a;
 
-  --secondary: #27272a;
-  /* Zinc 800 */
-  --secondary-foreground: #fafafa;
+  --secondary: #1e293b;
+  /* Slate 800 */
+  --secondary-foreground: #f8fafc;
 
-  --accent: #9680F0;
-  /* Even Lighter Violet */
-  --accent-foreground: #09090b;
+  --accent: #2dd4bf;
+  /* Teal 400 */
+  --accent-foreground: #0f172a;
 
-  --muted: #27272a;
-  /* Zinc 800 */
-  --muted-foreground: #a1a1aa;
-  /* Zinc 400 */
+  --muted: #1e293b;
+  /* Slate 800 */
+  --muted-foreground: #94a3b8;
+  /* Slate 400 */
 
   --destructive: #ef4444;
   /* Standard Red */

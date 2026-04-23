@@ -23,6 +23,7 @@ export default function Navbar() {
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center gap-8 text-sm font-medium">
                     <Link href="/" className="hover:text-primary transition-colors">{t.about}</Link>
+                    <Link href="#experience" className="hover:text-primary transition-colors">{t.experience}</Link>
                     <Link href="#education" className="hover:text-primary transition-colors">{t.education}</Link>
                     <Link href="#research" className="hover:text-primary transition-colors">{t.research}</Link>
                     <Link href="#projects" className="hover:text-primary transition-colors">{t.projects}</Link>
@@ -85,6 +86,7 @@ export default function Navbar() {
                 <div className="md:hidden border-t border-secondary bg-background/95 backdrop-blur-md absolute w-full left-0 top-16 shadow-lg">
                     <div className="flex flex-col p-6 gap-4 text-center font-medium">
                         <Link href="/" onClick={closeMenu} className="py-2 hover:text-primary transition-colors">{t.about}</Link>
+                        <Link href="#experience" onClick={closeMenu} className="py-2 hover:text-primary transition-colors">{t.experience}</Link>
                         <Link href="#education" onClick={closeMenu} className="py-2 hover:text-primary transition-colors">{t.education}</Link>
                         <Link href="#research" onClick={closeMenu} className="py-2 hover:text-primary transition-colors">{t.research}</Link>
                         <Link href="#projects" onClick={closeMenu} className="py-2 hover:text-primary transition-colors">{t.projects}</Link>

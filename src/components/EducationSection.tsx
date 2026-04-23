@@ -9,7 +9,7 @@ export default function EducationSection() {
     const t = translations[language].education;
 
     return (
-        <section id="education" className="py-20 bg-background">
+        <section id="education" className="py-20 bg-secondary/20">
             <div className="max-w-5xl mx-auto px-6">
                 <h2 className="text-3xl font-bold mb-12 text-center">{t.title}</h2>
 

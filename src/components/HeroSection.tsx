@@ -32,7 +32,7 @@ export default function HeroSection() {
                         </a>
                     </div>
 
-                    <div className="flex gap-4 pt-4 justify-center">
+                    <div className="flex gap-4 pt-4 justify-center flex-wrap">
                         <Link
                             href="#contact"
                             className="px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-accent transition-colors"
@@ -45,6 +45,14 @@ export default function HeroSection() {
                         >
                             {t.cta_projects}
                         </Link>
+                        <a
+                            href={language === 'en' ? "/CV_Mehmet_Ali_Erdogan_EN.pdf" : "/CV_Mehmet_Ali_Erdogan_TR.pdf"}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-6 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors rounded-lg font-medium"
+                        >
+                            {t.cta_cv}
+                        </a>
                     </div>
                 </div>
 
