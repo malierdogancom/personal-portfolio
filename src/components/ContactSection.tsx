@@ -3,8 +3,6 @@
 import { useLanguage } from '@/context/LanguageContext';
 import { translations } from '@/data/translations';
 import { useState } from 'react';
-import { db } from '@/lib/firebase';
-import { collection, addDoc } from 'firebase/firestore';
 
 export default function ContactSection() {
     const { language } = useLanguage();
@@ -20,37 +18,17 @@ export default function ContactSection() {
         setError(null);
 
         const formData = new FormData(e.currentTarget);
-        const senderName = formData.get('name') as string;
-        const senderEmail = formData.get('email') as string;
-        const messageText = formData.get('message') as string;
-
-        // Structure required by Firebase Trigger Email extension
-        const emailData = {
-            to: ['malierdgnn@gmail.com'], // Your email to receive notifications
-            message: {
-                subject: `Portfolio Contact: ${senderName}`,
-                text: `From: ${senderName} (${senderEmail})\n\nMessage:\n${messageText}\n\nSent at: ${new Date().toLocaleString('tr-TR')}`,
-                html: `
-                    <h2>New Contact Form Submission</h2>
-                    <p><strong>From:</strong> ${senderName}</p>
-                    <p><strong>Email:</strong> ${senderEmail}</p>
-                    <p><strong>Message:</strong></p>
-                    <p>${messageText.replace(/\n/g, '<br>')}</p>
-                    <hr>
-                    <p><small>Sent at: ${new Date().toLocaleString('tr-TR')}</small></p>
-                `
-            },
-            // Store original form data for your records
-            formData: {
-                name: senderName,
-                email: senderEmail,
-                message: messageText,
-                timestamp: new Date().toISOString(),
-            }
-        };
+        const name = formData.get('name') as string;
+        const email = formData.get('email') as string;
+        const message = formData.get('message') as string;
 
         try {
-            await addDoc(collection(db, 'messages'), emailData);
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, email, message }),
+            });
+            if (!res.ok) throw new Error('Failed');
             setIsSuccess(true);
             (e.target as HTMLFormElement).reset();
         } catch (err) {
