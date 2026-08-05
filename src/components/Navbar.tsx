@@ -27,6 +27,7 @@ export default function Navbar() {
                     <Link href="#education" className="hover:text-primary transition-colors">{t.education}</Link>
                     <Link href="#research" className="hover:text-primary transition-colors">{t.research}</Link>
                     <Link href="#projects" className="hover:text-primary transition-colors">{t.projects}</Link>
+                    <Link href="#publications" className="hover:text-primary transition-colors">{t.publications}</Link>
                     <Link href="#contact" className="hover:text-primary transition-colors">{t.contact}</Link>
 
                     <div className="flex items-center gap-2 border border-secondary rounded-full px-3 py-1 bg-secondary/30">
@@ -90,6 +91,7 @@ export default function Navbar() {
                         <Link href="#education" onClick={closeMenu} className="py-2 hover:text-primary transition-colors">{t.education}</Link>
                         <Link href="#research" onClick={closeMenu} className="py-2 hover:text-primary transition-colors">{t.research}</Link>
                         <Link href="#projects" onClick={closeMenu} className="py-2 hover:text-primary transition-colors">{t.projects}</Link>
+                        <Link href="#publications" onClick={closeMenu} className="py-2 hover:text-primary transition-colors">{t.publications}</Link>
                         <Link href="#contact" onClick={closeMenu} className="py-2 hover:text-primary transition-colors">{t.contact}</Link>
                     </div>
                 </div>

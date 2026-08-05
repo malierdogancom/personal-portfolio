@@ -6,13 +6,14 @@ export const translations = {
             education: "Education",
             research: "Research",
             projects: "Projects",
+            publications: "Publications",
             contact: "Contact",
         },
         hero: {
             greeting: "Hi, I'm",
             title: "MSc Student in Computer Engineering at",
             university: "Istanbul Technical University (İTÜ)",
-            bio: "M.Sc. student in Computer Engineering specializing in Bioinformatics. Focused on leveraging previous experience in fullstack development and database management to create innovative solutions in metabolomic data analysis and computational biology.",
+            bio: "M.Sc. student in Computer Engineering specializing in Bioinformatics. Focused on utilizing experience in system design/development and database management to create innovative solutions in metabolomic data analysis and computational biology.",
             cta_contact: "Get in Touch",
             cta_projects: "View Projects",
             cta_cv: "Download CV",
@@ -107,17 +108,60 @@ export const translations = {
             awards_title: "Awards & Events",
             items: [
                 {
-                    title: "Customized AI Chatbot (UN.GPT & kuran.stackia)",
-                    tech: "React, Next.js, AWS, MySQL, OpenAI API",
-                    description: "Designed and developed an end-to-end AI chatbot and web interface working with a specific knowledge base."
+                    category: "Research & High-Performance Computing (HPC)",
+                    title: "Metabolomics Data Imputation & ML Pipeline",
+                    tech: "Python, PyTorch, VAEs, Scikit-learn",
+                    description: "Developed deep learning models (including VAEs) for combining and imputing heterogeneous metabolomics datasets. Managed end-to-end experiment pipelines, status tracking, and automated notifications."
                 },
                 {
+                    category: "Research & High-Performance Computing (HPC)",
+                    title: "HPC Cluster Management",
+                    tech: "TRUBA, İTÜ UHEM, SLURM, A100/V100 GPUs",
+                    description: "Actively utilized national HPC clusters. Wrote SLURM job scripts, managed PyTorch/CUDA version compatibilities, and executed large-scale training jobs on A100/V100 GPUs."
+                },
+                {
+                    category: "Cloud Infrastructure & Self-Hosted Deployments",
+                    title: "Production Server Architecture (malierdogan.com)",
+                    tech: "Ubuntu, Docker Compose",
+                    description: "Migrated and actively maintain all personal and utility web applications on a self-hosted local server infrastructure."
+                },
+                {
+                    category: "Cloud Infrastructure & Self-Hosted Deployments",
+                    title: "DevOps & Networking",
+                    tech: "Nginx, Certbot, Cloudflare Tunnels, Tailscale",
+                    description: "Architected a multi-service containerized environment. Managed network routing and security using an Nginx reverse proxy, automated SSL (Certbot), Cloudflare Tunnels, and Tailscale."
+                },
+                {
+                    category: "Cloud Infrastructure & Self-Hosted Deployments",
+                    title: "Database & Monitoring",
+                    tech: "PostgreSQL, MongoDB, Glances",
+                    description: "Deployed and maintained remote PostgreSQL and MongoDB instances, with real-time system resource monitoring via Glances."
+                },
+                {
+                    category: "Full-Stack Web Development",
+                    title: "Customized AI Chatbot (UN.GPT & kuran.stackia)",
+                    tech: "React, Next.js, AWS, MySQL, OpenAI API",
+                    description: "Designed and developed an end-to-end AI chatbot and web interface utilizing the OpenAI API, operating within a restricted knowledge base."
+                },
+                {
+                    category: "Full-Stack Web Development",
+                    title: "Self-Hosted Utility Applications",
+                    tech: "React, FastAPI, PostgreSQL, Next.js, MongoDB, JWT",
+                    description: "Developed and deployed various web utilities demonstrating diverse tech stacks, including an API-driven data synchronization platform and an interactive matchmaking engine with JWT authentication."
+                },
+                {
+                    category: "Mobile Application Development",
                     title: "Terat - Match Organization Platform",
                     tech: "Flutter, Dart, Firebase",
-                    description: "Built a comprehensive mobile application for organizing matches with real-time database integration."
+                    description: "Built a comprehensive mobile application utilizing a real-time database that allows users to form teams and organize matches."
                 }
             ],
             awards: [
+                {
+                    title: "ACM BCB 2026",
+                    event: "ACM International Conference on Bioinformatics, Computational Biology, and Health Informatics",
+                    year: "2026"
+                },
                 {
                     title: "TUSEB İzmir Genom Workshop",
                     event: "Dokuz Eylül University",
@@ -127,6 +171,38 @@ export const translations = {
                     title: "Best Presentation Award",
                     event: "HIBIT / RSG - 18th International Symposium on Health Informatics and Bioinformatics",
                     year: "2025"
+                }
+            ]
+        },
+        publications: {
+            title: "Publications",
+            items: [
+                {
+                    type: "Refereed Journal Publication",
+                    authors: "Çelik, S., Can, B., Erdoğan, M. A., & Çakmak, A.",
+                    title: "A Deep Learning Architecture for Combining and Imputing Heterogeneous Metabolomics Datasets.",
+                    venue: "BMC Bioinformatics",
+                    year: "2026",
+                    doi: "10.1186/s12859-026-06560-7",
+                    doiUrl: "https://doi.org/10.1186/s12859-026-06560-7"
+                },
+                {
+                    type: "Refereed Conference Publication",
+                    authors: "Şahin, A., Erdoğan, M. A., Kaya, U. S., & Çakmak, A.",
+                    title: "MetabOmics: Metabolism-Oriented Omics Data Integration.",
+                    venue: "ACM BCB — International Conference on Bioinformatics, Computational Biology, and Health Informatics, Rende, Italy",
+                    year: "2026",
+                    doi: "10.1145/3807503.3819462",
+                    doiUrl: "https://doi.org/10.1145/3807503.3819462"
+                },
+                {
+                    type: "Refereed Abstract & Oral Presentation",
+                    authors: "Yiğit, E., Çakmak, A., & Erdoğan, M. A.",
+                    title: "Benchmarking Metabolic Network-based Biomarker Discovery Methods.",
+                    venue: "Acıbadem University Journal of Health Sciences, Vol. 17 (Suppl. 1), Oral Presentations (to appear)",
+                    year: "2026",
+                    doi: "",
+                    doiUrl: ""
                 }
             ]
         },
@@ -153,13 +229,14 @@ export const translations = {
             education: "Eğitim",
             research: "Araştırma",
             projects: "Projeler",
+            publications: "Yayınlar",
             contact: "İletişim",
         },
         hero: {
             greeting: "Merhaba, Ben",
             title: "Bilgisayar Mühendisliği Yüksek Lisans Öğrencisi,",
             university: "İstanbul Teknik Üniversitesi (İTÜ)",
-            bio: "Biyoinformatik alanında uzmanlaşan, Bilgisayar Mühendisliği Yüksek Lisans öğrencisi. Fullstack geliştirme ve veritabanı yönetimi konularındaki tecrübesini, metabolomik veri analizi ve hesaplamalı biyoloji alanlarında yenilikçi çözümler üretmek için kullanmaya odaklanmıştır.",
+            bio: "Biyoinformatik alanında uzmanlaşan Bilgisayar Mühendisliği Yüksek Lisans öğrencisi. Sistem tasarımı/geliştirme ve veritabanı yönetimi konularındaki deneyimlerini, metabolomik veri analizi ve hesaplamalı biyoloji alanlarında yenilikçi çözümler üretmek için kullanmaya odaklanmaktadır.",
             cta_contact: "İletişime Geç",
             cta_projects: "Projeleri İncele",
             cta_cv: "CV İndir",
@@ -254,17 +331,60 @@ export const translations = {
             awards_title: "Etkinlikler ve Ödüller",
             items: [
                 {
-                    title: "Özelleştirilmiş AI Chatbot (UN.GPT & kuran.stackia)",
-                    tech: "React, Next.js, AWS, MySQL, OpenAI API",
-                    description: "Belirli bir bilgi tabanı ile çalışan, uçtan uca yapay zeka destekli bir sohbet botu ve web arayüzü tasarlandı ve geliştirildi."
+                    category: "Araştırma & Yüksek Performanslı Hesaplama (HPC)",
+                    title: "Metabolomik Veri Tamamlama (Imputation) & ML İş Akışı",
+                    tech: "Python, PyTorch, VAE, Scikit-learn",
+                    description: "Heterojen metabolomik veri setlerini birleştirmek ve tamamlamak için derin öğrenme modelleri (VAE'ler dahil) geliştirildi. Uçtan uca deney iş akışları, durum takibi ve otomatik bildirim süreçleri yönetildi."
                 },
                 {
+                    category: "Araştırma & Yüksek Performanslı Hesaplama (HPC)",
+                    title: "HPC Küme Yönetimi",
+                    tech: "TRUBA, İTÜ UHEM, SLURM, A100/V100 GPU",
+                    description: "Ulusal HPC kümeleri aktif olarak kullanıldı. SLURM iş betikleri yazıldı, PyTorch/CUDA sürüm uyumlulukları yönetildi ve A100/V100 GPU'lar üzerinde büyük ölçekli eğitim işleri yürütüldü."
+                },
+                {
+                    category: "Bulut Altyapısı & Bireysel Sunucu (Self-Hosted) Dağıtımları",
+                    title: "Üretim Ortamı Sunucu Mimarisi (malierdogan.com)",
+                    tech: "Ubuntu, Docker Compose",
+                    description: "Tüm kişisel ve yardımcı web uygulamaları, bireysel olarak barındırılan (self-hosted) yerel sunucu altyapısına taşındı ve aktif olarak yönetilmektedir."
+                },
+                {
+                    category: "Bulut Altyapısı & Bireysel Sunucu (Self-Hosted) Dağıtımları",
+                    title: "DevOps & Ağ Yönetimi",
+                    tech: "Nginx, Certbot, Cloudflare Tunnels, Tailscale",
+                    description: "Çok servisli bir konteyner mimarisi tasarlandı. Nginx reverse proxy, otomatik SSL (Certbot), Cloudflare Tunnels ve Tailscale kullanılarak ağ yönlendirmesi ve güvenliği sağlandı."
+                },
+                {
+                    category: "Bulut Altyapısı & Bireysel Sunucu (Self-Hosted) Dağıtımları",
+                    title: "Veritabanı & İzleme",
+                    tech: "PostgreSQL, MongoDB, Glances",
+                    description: "Uzak PostgreSQL ve MongoDB veritabanları kuruldu ve bakımları yapıldı; Glances aracılığıyla gerçek zamanlı sistem kaynak izleme entegre edildi."
+                },
+                {
+                    category: "Full-Stack Web Geliştirme",
+                    title: "Özelleştirilmiş AI Chatbot (UN.GPT & kuran.stackia)",
+                    tech: "React, Next.js, AWS, MySQL, OpenAI API",
+                    description: "Sınırlandırılmış bir bilgi tabanı içerisinde çalışan, OpenAI API tabanlı uçtan uca bir yapay zeka sohbet botu ve web arayüzü tasarlandı ve geliştirildi."
+                },
+                {
+                    category: "Full-Stack Web Geliştirme",
+                    title: "Bireysel Barındırılan (Self-Hosted) Yardımcı Uygulamalar",
+                    tech: "React, FastAPI, PostgreSQL, Next.js, MongoDB, JWT",
+                    description: "Farklı teknoloji yığınlarını sergileyen çeşitli web araçları geliştirildi ve yayına alındı; API odaklı bir veri senkronizasyon platformu ve JWT kimlik doğrulamalı interaktif bir eşleştirme motoru bunlar arasındadır."
+                },
+                {
+                    category: "Mobil Uygulama Geliştirme",
                     title: "Terat - Maç Organizasyon Platformu",
                     tech: "Flutter, Dart, Firebase",
                     description: "Kullanıcıların takım kurup maç organize etmelerini sağlayan, gerçek zamanlı veritabanı kullanan kapsamlı bir mobil uygulama geliştirildi."
                 }
             ],
             awards: [
+                {
+                    title: "ACM BCB 2026",
+                    event: "ACM Uluslararası Biyoinformatik, Hesaplamalı Biyoloji ve Sağlık Bilişimi Konferansı",
+                    year: "2026"
+                },
                 {
                     title: "TUSEB İzmir Genom Çalıştayı",
                     event: "Dokuz Eylül Üniversitesi",
@@ -274,6 +394,38 @@ export const translations = {
                     title: "En İyi Sunum Ödülü",
                     event: "HIBIT / RSG - 18. Uluslararası Sağlık Bilişimi ve Biyoinformatik Sempozyumu",
                     year: "2025"
+                }
+            ]
+        },
+        publications: {
+            title: "Akademik Yayınlar",
+            items: [
+                {
+                    type: "Hakemli Dergi Yayını",
+                    authors: "Çelik, S., Can, B., Erdoğan, M. A. ve Çakmak, A.",
+                    title: "A Deep Learning Architecture for Combining and Imputing Heterogeneous Metabolomics Datasets.",
+                    venue: "BMC Bioinformatics",
+                    year: "2026",
+                    doi: "10.1186/s12859-026-06560-7",
+                    doiUrl: "https://doi.org/10.1186/s12859-026-06560-7"
+                },
+                {
+                    type: "Hakemli Konferans Bildirisi",
+                    authors: "Şahin, A., Erdoğan, M. A., Kaya, U. S. ve Çakmak, A.",
+                    title: "MetabOmics: Metabolism-Oriented Omics Data Integration.",
+                    venue: "ACM BCB — Uluslararası Biyoinformatik, Hesaplamalı Biyoloji ve Sağlık Bilişimi Konferansı, Rende, İtalya",
+                    year: "2026",
+                    doi: "10.1145/3807503.3819462",
+                    doiUrl: "https://doi.org/10.1145/3807503.3819462"
+                },
+                {
+                    type: "Hakemli Özet ve Sözlü Sunum",
+                    authors: "Yiğit, E., Çakmak, A. ve Erdoğan, M. A.",
+                    title: "Benchmarking Metabolic Network-based Biomarker Discovery Methods.",
+                    venue: "Acıbadem Üniversitesi Sağlık Bilimleri Dergisi, Cilt 17 (Ek 1), Sözlü Sunumlar (basım aşamasında)",
+                    year: "2026",
+                    doi: "",
+                    doiUrl: ""
                 }
             ]
         },
