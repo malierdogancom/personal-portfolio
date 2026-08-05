@@ -12,9 +12,9 @@ export default function Home() {
       <HeroSection />
       <ResearchSection />
       <TimelineSection />
-      <AwardsSection />
-      <ProjectsSection />
       <PublicationsSection />
+      <ProjectsSection />
+      <AwardsSection />
       <ContactSection />
     </div>
   );
