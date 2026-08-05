@@ -35,27 +35,20 @@ export const translations = {
                     company: "TÜBİTAK",
                     date: "Sep 2025 - Feb 2026",
                     description: [
-                        "Actively participated in the project 'Micro(RNA)-Based and Computational Approaches in the Diagnosis, Prognosis, and Treatment of Alzheimer's and Dementia'.",
-                        "Conducted data analysis and modeling using bioinformatics algorithms."
+                        "Participated in the project 'Micro(RNA)-Based and Computational Approaches in the Diagnosis, Prognosis, and Treatment of Alzheimer's and Dementia'."
                     ]
                 },
                 {
                     role: "Intern",
                     company: "COMSIS Bilgisayar Ltd. Şti.",
                     date: "Jul 2025 - Aug 2025",
-                    description: [
-                        "Supported the maintenance and development of PHP-based e-commerce platforms.",
-                        "Implemented user interface (UI) improvements in line with web design principles."
-                    ]
+                    description: []
                 },
                 {
                     role: "Intern",
                     company: "Haroon Technology",
                     date: "Mar 2025 - May 2025",
-                    description: [
-                        "Contributed to the development of a PHP-based Customer Relationship Management (CRM) system.",
-                        "Wrote database queries using SQL and participated in database management processes."
-                    ]
+                    description: []
                 }
             ]
         },
@@ -66,7 +59,7 @@ export const translations = {
                     year: "Sep 2025 - Present",
                     degree: "M.Sc. in Computer Engineering",
                     university: "Istanbul Technical University (İTÜ)",
-                    description: "Specializing in Bioinformatics and Computational Biology. GPA: 4.00"
+                    description: "Specializing in Bioinformatics and Computational Biology. GPA: 3.67"
                 },
                 {
                     year: "Sep 2021 - Aug 2025",
@@ -105,7 +98,7 @@ export const translations = {
         },
         projects: {
             title: "Projects",
-            awards_title: "Awards & Events",
+            awards_title: "Conferences & Workshops",
             items: [
                 {
                     category: "Research & High-Performance Computing (HPC)",
@@ -163,13 +156,13 @@ export const translations = {
                     year: "2026"
                 },
                 {
-                    title: "TUSEB İzmir Genom Workshop",
-                    event: "Dokuz Eylül University",
+                    title: "HIBIT / RSG 2025",
+                    event: "18th International Symposium on Health Informatics and Bioinformatics — Best Presentation Award",
                     year: "2025"
                 },
                 {
-                    title: "Best Presentation Award",
-                    event: "HIBIT / RSG - 18th International Symposium on Health Informatics and Bioinformatics",
+                    title: "TUSEB İzmir Genome Workshop",
+                    event: "Dokuz Eylül University",
                     year: "2025"
                 }
             ]
@@ -258,27 +251,20 @@ export const translations = {
                     company: "TÜBİTAK",
                     date: "Eylül 2025 - Şubat 2026",
                     description: [
-                        "\"Alzheimer ve Demans Tanısı, Prognozu ve Tedavisinde (Mikro)RNA-Tabanlı ve Hesaplamalı Yaklaşımlar\" projesinde aktif olarak görev alındı.",
-                        "Proje kapsamında, biyoinformatik algoritmaları kullanılarak veri analizi ve modelleme çalışmaları yürütüldü."
+                        "\"Alzheimer ve Demans Tanısı, Prognozu ve Tedavisinde (Mikro)RNA-Tabanlı ve Hesaplamalı Yaklaşımlar\" projesinde görev alındı."
                     ]
                 },
                 {
                     role: "Stajyer",
                     company: "COMSIS Bilgisayar Ltd. Şti.",
                     date: "Temmuz 2025 - Ağustos 2025",
-                    description: [
-                        "PHP kullanılarak geliştirilen e-ticaret platformlarının bakım ve geliştirme süreçlerine destek verildi.",
-                        "Web tasarımı prensipleri doğrultusunda kullanıcı arayüzü (UI) iyileştirmeleri yapıldı."
-                    ]
+                    description: []
                 },
                 {
                     role: "Stajyer",
                     company: "Haroon Technology",
                     date: "Mart 2025 - Mayıs 2025",
-                    description: [
-                        "PHP tabanlı Müşteri İlişkileri Yönetimi (CRM) sisteminin geliştirilmesine katkı sağlandı.",
-                        "SQL kullanılarak veritabanı sorguları yazıldı ve veritabanı yönetimi süreçlerinde görev alındı."
-                    ]
+                    description: []
                 }
             ]
         },
@@ -289,7 +275,7 @@ export const translations = {
                     year: "Eylül 2025 - Devam Ediyor",
                     degree: "Bilgisayar Mühendisliği Yüksek Lisans Programı",
                     university: "İstanbul Teknik Üniversitesi",
-                    description: "Biyoinformatik ve Hesaplamalı Biyoloji üzerine uzmanlaşma. GPA: 4.00"
+                    description: "Biyoinformatik ve Hesaplamalı Biyoloji üzerine uzmanlaşma. GPA: 3.67"
                 },
                 {
                     year: "Eylül 2021 - Ağustos 2025",
@@ -328,7 +314,7 @@ export const translations = {
         },
         projects: {
             title: "Projeler",
-            awards_title: "Etkinlikler ve Ödüller",
+            awards_title: "Konferans ve Çalıştaylar",
             items: [
                 {
                     category: "Araştırma & Yüksek Performanslı Hesaplama (HPC)",
@@ -386,13 +372,13 @@ export const translations = {
                     year: "2026"
                 },
                 {
-                    title: "TUSEB İzmir Genom Çalıştayı",
-                    event: "Dokuz Eylül Üniversitesi",
+                    title: "HIBIT / RSG 2025",
+                    event: "18. Uluslararası Sağlık Bilişimi ve Biyoinformatik Sempozyumu — En İyi Sunum Ödülü",
                     year: "2025"
                 },
                 {
-                    title: "En İyi Sunum Ödülü",
-                    event: "HIBIT / RSG - 18. Uluslararası Sağlık Bilişimi ve Biyoinformatik Sempozyumu",
+                    title: "TUSEB İzmir Genom Çalıştayı",
+                    event: "Dokuz Eylül Üniversitesi",
                     year: "2025"
                 }
             ]

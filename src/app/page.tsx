@@ -11,8 +11,8 @@ export default function Home() {
     <div className="flex flex-col">
       <HeroSection />
       <ResearchSection />
-      <TimelineSection />
       <PublicationsSection />
+      <TimelineSection />
       <ProjectsSection />
       <AwardsSection />
       <ContactSection />

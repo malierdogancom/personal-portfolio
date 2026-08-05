@@ -160,9 +160,9 @@ export default function TimelineSection() {
                 </div>
 
                 {/* DESKTOP GRID TIMELINE */}
-                <div className="hidden xl:grid relative w-full gap-x-6 gap-y-0 items-start min-h-[800px]" style={{
+                <div className="hidden xl:grid relative w-full gap-x-6 gap-y-0 items-start min-h-[420px]" style={{
                     gridTemplateColumns: "1fr 1fr 5rem 1fr 1fr",
-                    gridTemplateRows: `repeat(${totalMonths}, minmax(1.5rem, auto))`
+                    gridTemplateRows: `repeat(${totalMonths}, minmax(0.5rem, auto))`
                 }}>
                     {/* Continuous Center line */}
                     <div className="absolute top-8 bottom-8 left-1/2 w-[2px] bg-secondary/30 -translate-x-1/2 z-0" />
