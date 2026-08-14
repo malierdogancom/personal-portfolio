@@ -148,7 +148,7 @@ export default function TimelineSection() {
     const expGrid = assignGridProps(allExp);
 
     return (
-        <section id="experience" className="py-20 bg-background relative overflow-hidden">
+        <section id="experience" className="py-20 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl font-bold text-primary mb-4">

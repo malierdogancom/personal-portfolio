@@ -157,7 +157,7 @@ export const translations = {
                 },
                 {
                     title: "HIBIT / RSG 2025",
-                    event: "18th International Symposium on Health Informatics and Bioinformatics — Best Presentation Award",
+                    event: "18th International Symposium on Health Informatics and Bioinformatics - Best Presentation Award",
                     year: "2025"
                 },
                 {
@@ -183,7 +183,7 @@ export const translations = {
                     type: "Refereed Conference Publication",
                     authors: "Şahin, A., Erdoğan, M. A., Kaya, U. S., & Çakmak, A.",
                     title: "MetabOmics: Metabolism-Oriented Omics Data Integration.",
-                    venue: "ACM BCB — International Conference on Bioinformatics, Computational Biology, and Health Informatics, Rende, Italy",
+                    venue: "ACM BCB - International Conference on Bioinformatics, Computational Biology, and Health Informatics, Rende, Italy",
                     year: "2026",
                     doi: "10.1145/3807503.3819462",
                     doiUrl: "https://doi.org/10.1145/3807503.3819462"
@@ -373,7 +373,7 @@ export const translations = {
                 },
                 {
                     title: "HIBIT / RSG 2025",
-                    event: "18. Uluslararası Sağlık Bilişimi ve Biyoinformatik Sempozyumu — En İyi Sunum Ödülü",
+                    event: "18. Uluslararası Sağlık Bilişimi ve Biyoinformatik Sempozyumu - En İyi Sunum Ödülü",
                     year: "2025"
                 },
                 {
@@ -399,7 +399,7 @@ export const translations = {
                     type: "Hakemli Konferans Bildirisi",
                     authors: "Şahin, A., Erdoğan, M. A., Kaya, U. S. ve Çakmak, A.",
                     title: "MetabOmics: Metabolism-Oriented Omics Data Integration.",
-                    venue: "ACM BCB — Uluslararası Biyoinformatik, Hesaplamalı Biyoloji ve Sağlık Bilişimi Konferansı, Rende, İtalya",
+                    venue: "ACM BCB - Uluslararası Biyoinformatik, Hesaplamalı Biyoloji ve Sağlık Bilişimi Konferansı, Rende, İtalya",
                     year: "2026",
                     doi: "10.1145/3807503.3819462",
                     doiUrl: "https://doi.org/10.1145/3807503.3819462"

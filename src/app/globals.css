@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+/* ============================================================
+   Systems Mind - single signature palette (dark).
+   Two SEMANTIC accents that encode identity, not decoration:
+     research (teal)  ·  build (amber)
+   The bridge between them is where this person lives.
+   ============================================================ */
+
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -19,44 +26,224 @@
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
 
+  /* semantic identity axes */
+  --color-research: var(--research);
+  --color-build: var(--build);
+  --color-line: var(--line);
+
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SFMono-Regular", monospace;
+  --font-display: var(--font-bricolage), var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --background: #0c0d11;
+  --foreground: #eceef2;
+
+  /* mid surface used for cards, borders (border-secondary) and chips */
+  --secondary: #1a1d24;
+  --secondary-foreground: #eceef2;
+  --muted: #16181e;
+  --muted-foreground: #8b909c;
+
+  /* hairline / structural lines */
+  --line: #23262f;
+
+  /* research = teal, drives primary interactive colour */
+  --primary: #48e0c8;
+  --primary-foreground: #04120f;
+  --research: #48e0c8;
+
+  /* build = amber */
+  --accent: #ff9e57;
+  --accent-foreground: #1a1206;
+  --build: #ff9e57;
+
+  --destructive: #ff6b6b;
+  --destructive-foreground: #0c0d11;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-:root {
-  /* Slate/Teal Theme - Professional Academic */
-  --background: #0f172a;
-  /* Slate 900 */
-  --foreground: #f8fafc;
-  /* Slate 50 */
-
-  --primary: #38bdf8;
-  /* Light Blue/Teal */
-  --primary-foreground: #0f172a;
-
-  --secondary: #1e293b;
-  /* Slate 800 */
-  --secondary-foreground: #f8fafc;
-
-  --accent: #2dd4bf;
-  /* Teal 400 */
-  --accent-foreground: #0f172a;
-
-  --muted: #1e293b;
-  /* Slate 800 */
-  --muted-foreground: #94a3b8;
-  /* Slate 400 */
-
-  --destructive: #ef4444;
-  /* Standard Red */
-  --destructive-foreground: #ffffff;
-}
-
 body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Display face carries the personality. Bricolage Grotesque, tight. */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+::selection {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+/* Quality floor: visible keyboard focus everywhere. */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Mono eyebrow / label utility used across sections. */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+/* ---- Signature: the systems graph ---- */
+@keyframes node-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(var(--drift, -6px));
+  }
+}
+
+@keyframes edge-draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes node-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* systems graph element classes */
+.sg-edge {
+  stroke-dasharray: 1;
+  animation: edge-draw 1.1s ease forwards;
+}
+.sg-node {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: node-pop 0.55s ease-out backwards;
+}
+.sg-float {
+  animation: node-float 7s ease-in-out infinite;
+}
+.sg-label {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  transition: opacity 0.25s ease, fill 0.25s ease;
+  pointer-events: none;
+  display: none;
+}
+/* labels are legible only once the graph is large enough */
+@media (min-width: 768px) {
+  .sg-label {
+    display: initial;
+  }
+}
+.sg-node {
+  cursor: default;
+}
+.sg-node:focus-visible {
+  outline: none;
+}
+
+/* ---- hero: kinetic entrance + treatment ---- */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.reveal {
+  animation: reveal-up 0.85s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(0.82);
+  }
+}
+.pulse-dot {
+  animation: pulse-dot 2.2s ease-in-out infinite;
+}
+
+/* teal → amber display word */
+.text-duo {
+  background: linear-gradient(100deg, var(--research), var(--build));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* keeps hero copy legible over the live field, fades into the page below */
+.hero-veil {
+  background:
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--background) 86%, transparent) 0%,
+      color-mix(in srgb, var(--background) 40%, transparent) 55%,
+      transparent 100%
+    ),
+    linear-gradient(0deg, var(--background) 0%, transparent 32%);
+}
+
+@keyframes scroll-cue {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(9px);
+    opacity: 0;
+  }
+}
+.scroll-cue span {
+  animation: scroll-cue 1.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }
