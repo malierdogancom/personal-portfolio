@@ -172,6 +172,15 @@ export const translations = {
             items: [
                 {
                     type: "Refereed Journal Publication",
+                    authors: "Erdoğan, M. A., & Çakmak, A.",
+                    title: "A High-Dimensional Benchmark of Objective Functions and Biological Resolutions for Personalized Metabolic Phenotyping.",
+                    venue: "Briefings in Bioinformatics (in press)",
+                    year: "2026",
+                    doi: "10.1093/bib/bbag528",
+                    doiUrl: "https://doi.org/10.1093/bib/bbag528"
+                },
+                {
+                    type: "Refereed Journal Publication",
                     authors: "Çelik, S., Can, B., Erdoğan, M. A., & Çakmak, A.",
                     title: "A Deep Learning Architecture for Combining and Imputing Heterogeneous Metabolomics Datasets.",
                     venue: "BMC Bioinformatics",
@@ -386,6 +395,15 @@ export const translations = {
         publications: {
             title: "Akademik Yayınlar",
             items: [
+                {
+                    type: "Hakemli Dergi Yayını",
+                    authors: "Erdoğan, M. A. ve Çakmak, A.",
+                    title: "A High-Dimensional Benchmark of Objective Functions and Biological Resolutions for Personalized Metabolic Phenotyping.",
+                    venue: "Briefings in Bioinformatics (basım aşamasında)",
+                    year: "2026",
+                    doi: "10.1093/bib/bbag528",
+                    doiUrl: "https://doi.org/10.1093/bib/bbag528"
+                },
                 {
                     type: "Hakemli Dergi Yayını",
                     authors: "Çelik, S., Can, B., Erdoğan, M. A. ve Çakmak, A.",
