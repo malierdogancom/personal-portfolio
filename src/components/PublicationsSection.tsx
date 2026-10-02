@@ -34,16 +34,28 @@ export default function PublicationsSection() {
                             </h4>
                             <p className="text-muted-foreground mt-1.5">{pub.authors}</p>
                             <p className="text-sm text-muted-foreground/80 mt-1 italic">{pub.venue}</p>
-                            {pub.doiUrl && (
-                                <a
-                                    href={pub.doiUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-block mt-3 font-mono text-xs text-primary hover:underline underline-offset-4"
-                                >
-                                    DOI {pub.doi} ↗
-                                </a>
-                            )}
+                            <div className="flex flex-wrap items-center gap-4 mt-3">
+                                {pub.doiUrl && (
+                                    <a
+                                        href={pub.doiUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="font-mono text-xs text-primary hover:underline underline-offset-4"
+                                    >
+                                        DOI {pub.doi} ↗
+                                    </a>
+                                )}
+                                {pub.pdfUrl && (
+                                    <a
+                                        href={pub.pdfUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="font-mono text-xs text-primary hover:underline underline-offset-4"
+                                    >
+                                        PDF ↓
+                                    </a>
+                                )}
+                            </div>
                         </li>
                     ))}
                 </ol>
